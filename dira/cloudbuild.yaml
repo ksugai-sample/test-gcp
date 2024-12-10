@@ -4,4 +4,5 @@ steps:
       #!/usr/bin/env bash
       echo "Hello World dira"
   - name: gcr.io/google.com/cloudsdktool/google-cloud-cli
+    dir: 'dira'
     script: gcloud meta list-files-for-upload

@@ -1,0 +1,7 @@
+steps:
+  - name: bash
+    script: |
+      #!/usr/bin/env bash
+      echo "Hello World dirb"
+  - name: gcr.io/google.com/cloudsdktool/google-cloud-cli
+    script: gcloud meta list-files-for-upload

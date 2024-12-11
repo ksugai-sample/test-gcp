@@ -9,3 +9,5 @@ steps:
   - name: gcr.io/google.com/cloudsdktool/google-cloud-cli
     dir: 'dirb'
     script: gcloud meta list-files-for-upload
+  - name: gcr.io/google.com/cloudsdktool/google-cloud-cli
+    script: gcloud meta list-files-for-upload

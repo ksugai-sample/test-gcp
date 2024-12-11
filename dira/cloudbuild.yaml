@@ -3,6 +3,24 @@ steps:
     script: |
       #!/usr/bin/env bash
       echo "Hello World dira"
+  - name: bash
+    script: |
+      #!/usr/bin/env bash
+      ls
+  - name: bash
+    script: |
+      #!/usr/bin/env bash
+      pwd
+  - name: bash
+    dir: 'dira'
+    script: |
+      #!/usr/bin/env bash
+      ls
+  - name: bash
+    dir: 'dirb'
+    script: |
+      #!/usr/bin/env bash
+      pwd
   - name: gcr.io/google.com/cloudsdktool/google-cloud-cli
     dir: 'dira'
     script: gcloud meta list-files-for-upload
